@@ -6,6 +6,7 @@ public class Dados {
     private static Lista<Universidade> universidades = new Lista<Universidade>();
     private static Lista<Projeto> projetos = new Lista<Projeto>();
     private static Lista<Artigo> artigos = new Lista<Artigo>();
+
     public static Lista<Pesquisador> getPesquisadores() {
         return pesquisadores;
     }
@@ -16,6 +17,7 @@ public class Dados {
     public static Lista<Universidade> getUniversidades() {
         return universidades;
     }
+    
     public static void addUniversidades(Universidade universidade) {
         Dados.universidades.add(universidade);
     }

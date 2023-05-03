@@ -2,7 +2,7 @@ public class Artigo {
     private String titulo;
     private int anoPublicacao;
     private String tituloRevista;
-    private Pesquisador[] pesquisadores;
+    private Lista<Pesquisador> pesquisadores = new Lista<Pesquisador>();
 
     public String getTitulo() {
         return titulo;
@@ -28,11 +28,11 @@ public class Artigo {
         this.tituloRevista = tituloRevista;
     }
 
-    public Pesquisador[] getPesquisadores() {
+    public Lista<Pesquisador> getPesquisadores() {
         return pesquisadores;
     }
 
-    public void setPesquisadores(Pesquisador[] pesquisadores) {
-        this.pesquisadores = pesquisadores;
+    public void addPesquisador(Pesquisador pesquisador) {
+        this.pesquisadores.add(pesquisador);
     }
 }

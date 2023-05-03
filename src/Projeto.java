@@ -5,6 +5,8 @@ public class Projeto {
     private String descricao;
     private String dataInicio;
     private String dataFinal;
+    private Lista<Pesquisador> pesquisadores = new Lista<Pesquisador>();
+
     public String getTitulo() {
         return titulo;
     }
@@ -40,10 +42,6 @@ public class Projeto {
     public void setPesquisadores(Lista<Pesquisador> pesquisadores) {
         this.pesquisadores = pesquisadores;
     }
-
-
-    private Lista<Pesquisador> pesquisadores = new Lista<Pesquisador>();
-
 
     public Lista<Pesquisador> getPesquisadores() {
         return pesquisadores;
