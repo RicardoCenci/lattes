@@ -37,23 +37,23 @@ public class Dados {
     }
 
 }
-class Lista<T>{
-    private ArrayList<T> lista = new ArrayList<T>();
-    public void add(T item){
-        this.lista.add(item);
-    }
-    public T get(int index){
-        return this.lista.get(index);
-    }
-    public int size(){
-        return this.lista.size();
-    }
+class Lista<T> extends ArrayList<T>{
     public T find( Predicate<T> predicate){
-        for (T item: this.lista) {
+        for (T item: this) {
             if(predicate.test(item)){
                 return item;
             }
         }
         return null;
+    }
+
+    public Lista<T> filter(Predicate<T> predicate){
+        Lista<T> lista = new Lista<T>();
+        for (T item: this) {
+            if(predicate.test(item)){
+                lista.add(item);
+            }
+        }
+        return lista;
     }
 }

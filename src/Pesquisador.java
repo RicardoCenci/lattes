@@ -42,6 +42,9 @@ public class Pesquisador {
     public Lista<Projeto> getProjetos() {
         return this.projetos;
     }
+    public Lista<Artigo> getArtigos(){
+        return this.artigos;
+    }
     public Projeto getProjeto(String tituloProjeto) {
         return this.projetos.find(proj -> {
             return proj.getTitulo().equals(tituloProjeto);

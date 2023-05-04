@@ -7,8 +7,8 @@ public class IO {
     public static void write(String str){
         System.out.println(str);
     }
-    public static void write(int str){
-        System.out.println(str);
+    public static void write(String str, int tabIndex){
+        System.out.println(Utils.padLeft(str, tabIndex * 4));
     }
 
     private static Scanner getScannerInstance(){
@@ -16,9 +16,6 @@ public class IO {
             IO.scannerInstance = new Scanner(System.in);
         }
         return IO.scannerInstance;
-    }
-    private static void clear(){
-        System.out.print("\033\143");
     }
     public static String read(){
         Scanner scanner = IO.getScannerInstance();

@@ -37,6 +37,13 @@ public class Programa {
 
         return menuStack.pop();
     }
+    public static SubMenu peekLastMenu(){
+        if(menuStack.isEmpty()){
+            return null;
+        };
+
+        return menuStack.peek();
+    }
     public static void exit(){
         Programa.isRunning = false;
     }
