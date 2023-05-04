@@ -1,4 +1,7 @@
 
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
 class ListarPesquisadoresProjetosFinalizados extends ControllerOption{
     protected void _display(){
         Lista<Projeto> projetos = Dados.getProjetos();
