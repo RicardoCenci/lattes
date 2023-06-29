@@ -1,7 +1,8 @@
 class MainMenu extends SubMenu {
     
     public MainMenu() {
-        CarregadorDeDados.carregarDados();
+        CarregadorDeDados c = new CarregadorDeDados();
+        c.carregarDados();
     }
 
     public void _display(){

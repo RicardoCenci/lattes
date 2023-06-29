@@ -6,6 +6,9 @@ public class Pesquisador {
     private Lista<Projeto> projetos = new Lista<Projeto>();
 
     public String getArea() {
+        if (area == null) {
+            return "Area não informada";
+        }
         return area;
     }
 

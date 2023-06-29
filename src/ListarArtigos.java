@@ -20,6 +20,7 @@ class ListarArtigos extends ControllerOption{
                 for (Pesquisador pesquisador : artigo.getPesquisadores()) {
                     IO.write(pesquisador.getNome(), 2);
                 }
+                IO.write("");
             }
         }
     }

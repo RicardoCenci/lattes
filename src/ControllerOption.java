@@ -5,6 +5,7 @@ abstract class ControllerOption extends SubMenu {
         try{
             super.display();
         }catch (Exception e){
+            e.printStackTrace();
             IO.write("Erro ao executar ação");
         }
     }

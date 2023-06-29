@@ -27,7 +27,8 @@ class ListarPesquisadoresUniversidade extends ControllerOption {
         IO.write("Pesquisadores:");
         for (int i = 0; pesquisadores.size() > i; i++) {
             Pesquisador pesquisador = pesquisadores.get(i);
-            IO.write(" - " + pesquisador.getNome() + " Area: " + pesquisador.getArea());
+            String area = pesquisador.getArea();
+            IO.write(" - " + pesquisador.getNome() + " Area: " + area);
         }
     }
     
